@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+
+}
+
+html, body { 
+    margin: 0;
+    padding: 0;
+}
+.nav ul {
+    margin:0;
+    border-bottom: 1px solid rgba(245, 197, 135, 0.699);
+}
+
+.nav li {
+    padding-top: 5px;
+    display: inline-block;
+}
+.nav a {
+    display: inline-block;
+    padding: .5em;
+    color: black;
+    text-decoration: none;
+}
+.main-nav {
+    text-align: center;
+    font-weight: lighter;
+    
+}
+.main-nav li {
+    padding: 0 5%;
+}
+.main-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3)
+}
+.flight-fare-head {
+    text-align: center;
+    font-size: 3em;
+}
+section{
+    background: url(1.jpeg);
+    background-size: cover;
+    padding-bottom : 60px;
+    padding-top: 50px;
+    
+}
+.main-header{
+    background-image: url(mod.gif);
+    
+    background-size: cover;
+    
+    padding-bottom: 5px;
+
+}
+.foot {
+    background-color: lightblue;
+    display: flex;
+}
+
+.foot-h3 {
+    text-align: center;
+}
+
+
+.foot-ul a:hover {
+    background-color: rgba(255, 255, 255, 0.3)
+}
+
+.result {
+    text-align: center;
+}
+
+.btn {
+    vertical-align:middle;
+    padding: 0.67em;
+    cursor: pointer;
+}
+.btn-section {
+    border: 2px solid sandybrown;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 0.2em;
+    font-size: 1.1em;
+    font-weight: bold;
+    
+}
+
+
+.btn-section:hover {
+    background-color: rgba(241, 200, 86, 0.2);
+}
+.section-row {
+    padding-bottom: 1em;
+    text-align: center;
+    font-weight: bold;
+
+}
+.section-row select {
+    background-color: rgba(255,255,255,0.1);
+    border: 2px solid sandybrown;
+
+}
+.section-row select:hover {
+    background-color: rgba(241, 200, 86, 0.2);
+
+}
+.section-row input {
+    background-color: rgba(255,255,255,0.1);
+    border: 2px solid sandybrown;
+}
+
+.section-row input:hover {
+    background-color: rgba(241, 200, 86, 0.2);
+}
+
+.git button {
+    background-image: url(icons8-github.svg);
+    background-repeat: no-repeat;
+}
+.git button img{
+    opacity: transparent;
+
+}
+
+

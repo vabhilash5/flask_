@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+    <form action="{{ url_for('predict')}}" method="POST">
+        <header class="main-header">
+            <nav class="nav main-nav">
+                <ul>
+                    <li><a href="index.html">PREDICTION</a></li>
+                    <li><a href="index.html">SAMPLE DATA</a></li>
+                    <li><a href="index.html">ABOUT</a></li>
+                </ul>
+            </nav>
+            
+            <h1 class="flight-fare-head">Flight Fare Prediction</h1>
+        </header>
+
+        <section>
+            <div class="section-row">
+                <label for="airline" class="airline">Select Airline</label>
+                <select name="Select Airline" id="airline">
+                    <option value="Air India">Air India</option>
+                    <option value="GoAir" Label="GoAir"></option>
+                    <option value="IndiGo" Label="IndiGo"></option>
+                    <option value="Jet Airways" Label="jet Airways"></option>
+                    <option value="Jet Airways Business" Label="Jet Airways Business"></option>
+                    <option value="Multiple carriers" Label="Multiple carriers"></option>
+                    <option value="Multiple carriers Premium economy" Label="Multiple carriers Premium economy"></option>
+                    <option value="SpiceJet" Label="SpiceJet"></option>
+                    <option value="Trujet" Label="Trujet"></option>
+                    <option value="Vistara" Label="Vistara"></option>
+                    <option value="Vistara Premium economy" Label="Vistara Premium economy"></option>
+                </select>
+            </div>
+            <div class="section-row">
+                <label for="select source place">select source place</label>
+                <select name="Select Source Place" id="select source place">
+                    <option value="Banglore">Banglore</option>
+                    <option value="Chennai" Label="Cochin"></option>
+                    <option value="Delhi" Label="Delhi"></option>
+                    <option value="Kolkata" Label="Hyderabad"></option>
+                    <option value="Mumbai" Label="Kolkata"></option>
+                    
+                </select>
+            </div>
+            <div class="section-row">
+                <label for="select destination place">select destination place</label>
+                <select name="Select Destination Place" id="select destination place">
+                    <option value="Banglore">Banglore</option>
+                    <option value="Cochin" Label="Cochin"></option>
+                    <option value="Delhi" Label="Delhi"></option>
+                    <option value="Hyderabad" Label="Hyderabad"></option>
+                    <option value="Kolkata" Label="Kolkata"></option>
+                    <option value="New Delhi" Label="New Delhi"></option>
+                </select>
+            </div>
+            <div class="section-row">
+                <label class="Total Stops">
+                    Total Stops
+                    <input type="number" name="Total Stops" required min="0" max="3" step="1" value="0">
+                </label>
+            </div>
+            <div class="section-row">
+                <label for="departure time">departure time :</label>
+
+                <input type="datetime-local" id="departure time"
+                        name="Departure Time" value="2020-05-21T19:30">
+            </div>
+            <div class="section-row">
+                <label for="arrival time">arrival time :</label>
+
+                <input type="datetime-local" id="arrival time"
+                        name="Arrival Time" value="2020-05-21T21:30">
+            </div>
+            <div class="section-row section-row-button">
+            <button type="submit" class="btn btn-section">Predict</button>
+            </div>
+            <h3 class="result">{{prediction_text}}</h3>
+        </section>
+        
+        <footer class="foot">
+            <h3 class="foot-h3">Contact</h3>
+            <ul class="foot-ul">
+                <li class="git"><a href="https://github.com/" target="_blank"><img width="50px" height="50px"></li></a>
+                <li class="twitter"><a href="https://twitter.com/explore" target="_blank"><img width="50px" height="50px" ></li></a>
+                <li class="youtube"><a href="https://www.youtube.com/" target="_blank"><img width="50px" height="50px" ></li></a>
+                <li class="instagram"><a href="https://www.instagram.com/" target="_blank"><img width="50px" height="50px" ></li></a>
+            </ul>
+        </footer>
+
+
+    
+    
+    </form>
+
+</body>
+</html>
